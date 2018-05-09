@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="height:55px">
       <mt-search
         v-model="value"
       >
@@ -7,6 +7,7 @@
           v-for="item in list"
           :title="item.year"
           :value="item.title"
+          :key="item"
           @click.native="itemclick(item)"
         >
         </mt-cell>
@@ -40,5 +41,8 @@
 </script>
 
 <style scoped>
-
+  /*不受scoped 限制>>>*/
+  >>>.mint-searchbar{
+  background-color: slateblue;
+}
 </style>
