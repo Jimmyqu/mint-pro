@@ -7,19 +7,30 @@
         <mt-swipe-item v-for="item in imgList" :key="item.id">
           <img class="swipe-img" :src="item.url" alt="">
         </mt-swipe-item>
-
       </mt-swipe>
     </div>
-    <router-view/>
+    <home-icons></home-icons>
+    <div class="pos-container">
+      <div class="pos"><i class="iconfont">&#xe60e;</i>定位信息</div>
+      <div class="pos"><i class="iconfont">&#xe635;</i>促销活动</div>
+    </div>
+    <home-hot></home-hot>
+    <home-like></home-like>
   </div>
 </template>
 
 <script>
   import HomeHeader from './components/homeheader'
+  import HomeIcons from './components/HomeIcons'
+  import HomeHot from './components/HomeHot'
+  import HomeLike from './components/HomeLike'
 export default {
   name: 'App',
   components:{
-    HomeHeader
+    HomeHeader,
+    HomeIcons,
+    HomeHot,
+    HomeLike
   },
   data(){
     return{
@@ -43,6 +54,7 @@ export default {
 </script>
 
 <style lang="less">
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -52,6 +64,17 @@ export default {
   }
   .is-active{
     background-color: red !important;
+  }
+  .pos-container{
+    display: flex;
+    .pos{
+      flex: 1;
+      height: 3rem;
+      background-color: rebeccapurple;
+      position: relative;
+      text-align: center;
+      line-height: 3rem;
+    }
   }
 }
 </style>

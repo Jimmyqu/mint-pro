@@ -12,13 +12,17 @@
         >
         </mt-cell>
       </mt-search>
+
     </div>
+
 </template>
 
 <script>
+
     //const url='https://api.douban.com/v2/movie/search?count=5&q='
     export default {
         name: "homeheader",
+
       data(){
           return {
             value:'',
