@@ -2,10 +2,10 @@
   <div class="hot-container">
     <div class="hot-top">
       <div class="hot-left"><i class="iconfont">&#xe683;</i>本周热门榜单</div>
-      <div class="hot-right">全部榜单<i class="iconfont" style="font-size: 0.6rem">&#xe8f6;</i></div>
+      <div class="hot-right">全部榜单<i class="iconfont" style="font-size: 0.06rem">&#xe8f6;</i></div>
     </div>
     <div class="hot-swipe">
-      <div style="overflow-x:scroll;display: -webkit-box;">
+      <div style="overflow-x:scroll;display: -webkit-box;height: 0.9rem">
         <div class="swipe-item" v-for="item in [1,2,3,4,5,6,7,8]">
           <img src="http://img1.qunarzz.com/sight/p0/1503/55/5577ab22b2e205d0.water.jpg_150x150_b3d42462.jpg" alt="">
           <p class="swipe-item-place">黄鹤楼</p>
@@ -32,36 +32,37 @@
   .hot-container{
     .hot-top{
       display: flex;
-      padding:0 0.5rem;
+      padding:0 0.05rem;
       div{
         flex:1;
-        height: 2rem;
-        line-height: 2rem;
+        height: .2rem;
+        line-height: .2rem;
       }
       .hot-left{
-        font-size: 1rem;
+        font-size: .1rem;
       }
       .hot-right{
         direction: rtl;
-        font-size: 0.6rem;
+        font-size: 0.06rem;
       }
     }
     .hot-swipe{
-      padding:0 0.5rem;
+      padding:0 0.05rem;
+
       .swipe-item{
-        width: 8rem;
-        height: 8rem;
+        width: 0.8rem;
+        height: 0.8rem;
         margin: 0 0.1rem;
         text-align: center;
         img{
-          margin-top: 0.2rem;
+
           width: 70%;
         }
         .swipe-item-place{
-          font-size: 0.5rem;
+          font-size: 0.05rem;
         }
         .swipe-item-price{
-          font-size: 0.3rem;
+          font-size: 0.03rem;
         }
       }
     }

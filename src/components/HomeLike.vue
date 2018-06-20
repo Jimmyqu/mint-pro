@@ -19,18 +19,18 @@
 
 <style scoped lang="less">
   .like-container{
-    padding:0 0.5rem;
+    padding:0 0.05rem;
     .like-top{
 
       .like-left{
-        height: 2rem;
-        line-height: 2rem;
+        height: .2rem;
+        line-height: .2rem;
       }
     }
     .like-bottom{
 
       .like-bottom-item{
-        height: 8rem;
+        height: .8rem;
         background-color: rosybrown;
         border-bottom: 1px slategray solid;
       }
